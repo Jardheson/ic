@@ -182,7 +182,7 @@ Se for adicionar **nova variável de produção nova** (hoje: 15 da p1..p11):
 2. Mapeie código interno (ex.: `p12`) no `VAR_COD_POR_VALUE` de [mappings.py](file:///g:/ic/domain/mappings.py).
 3. Adicione na lista `DEFAULT_VARIAVEIS_CODIGOS` de [constants.py](file:///g:/ic/config/constants.py) se for padrão.
 4. Rode `pytest tests/test_domain_models.py` para validar `codigos_variaveis` não quebrando.
-5. Rode pipeline completo 1x e confira: `TOKENS ✅ 16/16` ou quantia nova.
+5. Rode pipeline completo 1x e confira: `TOKENS 16/16` ou quantia nova.
 
 **NUNCA** crie valores de checkbox fictícios. Todos valores de `value` devem ser extraídos do HTML real.
 
