@@ -175,7 +175,7 @@ Rode o mesmo comando: `python main.py`. Chrome roda em background sem interface.
 ### Rastreabilidade (Matriz Evidência)
 | ID Requisito | Implementação | Evidência / Teste |
 |---|---|---|
-| R1: 15 variáveis exatas | `preencher_variaveis` + `_validar_tokens_variaveis` em parametros_page | Logs `"TOKENS ✅ 15/15"` + values reais `['948','955',...]` |
+| R1: 15 variáveis exatas | `preencher_variaveis` + `_validar_tokens_variaveis` em parametros_page | Logs `"TOKENS 15/15"` + values reais `['948','955',...]` |
 | R2: Ordem rígida Fase 3 | `pesquisa_service.py` ordem imposta (service decide ordem, não main) | Código fonte + pytest smoke |
 | R3: Fail-fast credenciais | `settings.py` Pydantic frozen | `test_domain_models.py` + mensagem `"CNI_USER e/ou CNI_PASSWORD ausentes"` |
 | R4: Retry ≥ 3 serviços | `@with_retry(tentativas=3)` em auth/navigation/pesquisa | `test_core_retry.py::test_with_retry_sucesso_segunda_tentativa` |
